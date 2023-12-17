@@ -47,15 +47,15 @@ Projeto desenvolvido durante o curso formação **Programador FullStack - Recode
 
 #### ** Banco de Dados ** 
 
-- [  ] Criação / Atualização da base de dados usando o padrão NoSql (MongoDB) ou SQL relacional, atendendo as especificações do projeto, usando o framework Spring Data e as Tecnologias da plataforma e linguagem Java, aplicando ORM (Object-Relational Mapping ou em português mapeamento objeto-relacional).    
+- [ x ] Criação / Atualização da base de dados usando o padrão NoSql (MongoDB) ou SQL relacional, atendendo as especificações do projeto, usando o framework Spring Data e as Tecnologias da plataforma e linguagem Java, aplicando ORM (Object-Relational Mapping ou em português mapeamento objeto-relacional).    
 
 #### ** Back-End ** 
 
-- [  ] Refatorar o código anterior usando os padrões de projeto MVC e Persistência de dados com os frameworks Spring para a organização da aplicação.  
+- [ x ] Refatorar o código anterior usando os padrões de projeto MVC e Persistência de dados com os frameworks Spring para a organização da aplicação.  
 
 #### ** Front-End ** 
 
-- [  ] As views da aplicação serão baseadas no padrão MVC usando opcionalmente a biblioteca React ou qualquer Java template engine (Thymeleaf).
+- [ x ] As views da aplicação serão baseadas no padrão MVC usando opcionalmente a biblioteca React ou qualquer Java template engine (Thymeleaf).
 
 ---
 
@@ -85,15 +85,13 @@ Este projeto é divido em três partes:
 
 As seguintes ferramentas foram usadas na construção do projeto:
 
-#### **Website - Front End** 
+#### ** Front End** 
 
--   **HTML**
--   **JSP**
--   **Bootstrap**
+-   **Swagger UI**
 
 #### ** BackEnd** 
 
--   **Java Web - Servlet**
+-   **Java Spring**
 
 #### ** Dados** 
 
