@@ -28,14 +28,6 @@ public class Pedido {
 	private formaPagamentoPedido formaPagamento;
 	private String viajantesPedido;
 	
-//	@JsonIgnore
-//	@ManyToOne(cascade = {CascadeType.PERSIST})
-//	@JoinTable(name="pedido",
-//	joinColumns=@JoinColumn(name="cliente_fk"),
-//	inverseJoinColumns=@JoinColumn(name="destino_fk"))
-//	private Set<Cliente> clientes = new HashSet<>();
-//	private Set<Destino> destinos = new HashSet<>();
-	
 	@ManyToOne(cascade = {CascadeType.PERSIST})
 	@JoinColumn(name="cliente_fk")
 	private Cliente cliente;
@@ -82,25 +74,7 @@ public class Pedido {
 
 	public void setViajantesPedido(String viajantesPedido) {
 		this.viajantesPedido = viajantesPedido;
-	}
-
-//	public Set<Cliente> getClientes() {
-//		return clientes;
-//	}
-//
-//	public void setClientes(Set<Cliente> clientes) {
-//		this.clientes = clientes;
-//	}
-//
-//	public Set<Destino> getDestinos() {
-//		return destinos;
-//	}
-//
-//	public void setDestinos(Set<Destino> destinos) {
-//		this.destinos = destinos;
-//	}
-//	
-//	
+	}	
 
 	
 }
