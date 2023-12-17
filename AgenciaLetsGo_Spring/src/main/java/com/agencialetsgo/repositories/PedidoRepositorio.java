@@ -13,9 +13,4 @@ import jakarta.transaction.Transactional;
 @Repository
 public interface PedidoRepositorio extends JpaRepository<Pedido, Long> {
 
-//	@Transactional
-//	@Modifying
-//	@Query(nativeQuery=true, value= "INSERT INTO pedido (idCliente, idDestino) VALUES (:clienteId, :destinoId)")
-//	void addPedido(@Param("clienteId") Long clienteId, @Param("destinoId")Long destinoId);
-
 }
