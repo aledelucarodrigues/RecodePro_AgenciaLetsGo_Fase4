@@ -12,6 +12,4 @@ public interface PedidoServico {
 	Pedido updatePedido(Long id, Pedido pedidoUpdated);
 	void deletePedidoById(Long id);
 	
-//	void addPedido(Long clienteId, Long destinoId);
-	
 }
