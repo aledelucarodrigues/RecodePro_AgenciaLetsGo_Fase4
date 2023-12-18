@@ -34,14 +34,14 @@ public class PedidoController {
 		}
 	
 	@GetMapping("/{idPedido}")
-	public ResponseEntity<Pedido> getPedidoById(@PathVariable Long id){
-		Pedido pedido = ps.getPedidoById(id);
+	public ResponseEntity<Pedido> getPedidoById(@PathVariable Long idPedido){
+		Pedido pedido = ps.getPedidoById(idPedido);
 		return ResponseEntity.ok(pedido);
 	}
 	
 	@PutMapping("{idPedido}")
-	public ResponseEntity<Pedido> updatePedido(@PathVariable Long id, @RequestBody Pedido pedidoUpdated){
-	Pedido pedido = ps.getPedidoById(id);
+	public ResponseEntity<Pedido> updatePedido(@PathVariable Long idPedido, @RequestBody Pedido pedidoUpdated){
+	Pedido pedido = ps.getPedidoById(idPedido);
 	pedido.setDataInicioViagem(pedidoUpdated.getDataInicioViagem());
 	pedido.setDataFimViagem(pedidoUpdated.getDataFimViagem());
 	pedido.setFormaPagamento(pedidoUpdated.getFormaPagamento());
@@ -53,8 +53,8 @@ public class PedidoController {
 	}
 	
 	@DeleteMapping("/{idPedido}")
-	public void deletePedido(@PathVariable Long id) {
-		ps.deletePedidoById(id);
+	public void deletePedido(@PathVariable Long idPedido) {
+		ps.deletePedidoById(idPedido);
 	}
 	
 }
