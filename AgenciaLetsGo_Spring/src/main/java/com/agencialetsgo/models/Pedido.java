@@ -1,10 +1,6 @@
 package com.agencialetsgo.models;
 
 import java.time.LocalDate;
-import java.util.HashSet;
-import java.util.Set;
-
-import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;
@@ -12,7 +8,6 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
-import jakarta.persistence.JoinTable;
 import jakarta.persistence.ManyToOne;
 
 
@@ -27,6 +22,7 @@ public class Pedido {
 	private enum formaPagamentoPedido {PIX, BOLETO, CARTAO_DE_CREDITO};
 	private formaPagamentoPedido formaPagamento;
 	private String viajantesPedido;
+
 	
 	@ManyToOne(cascade = {CascadeType.PERSIST})
 	@JoinColumn(name="cliente_fk")
@@ -74,7 +70,41 @@ public class Pedido {
 
 	public void setViajantesPedido(String viajantesPedido) {
 		this.viajantesPedido = viajantesPedido;
-	}	
+	}
+
+	public Cliente getCliente() {
+		return cliente;
+	}
+
+	public void setCliente(Cliente cliente) {
+		this.cliente = cliente;
+	}
+
+	public Destino getDestino() {
+		return destino;
+	}
+
+	public void setDestino(Destino destino) {
+		this.destino = destino;
+	}
+
+//	public Set<Cliente> getClientes() {
+//		return clientes;
+//	}
+//
+//	public void setClientes(Set<Cliente> clientes) {
+//		this.clientes = clientes;
+//	}
+//
+//	public Set<Destino> getDestinos() {
+//		return destinos;
+//	}
+//
+//	public void setDestinos(Set<Destino> destinos) {
+//		this.destinos = destinos;
+//	}
+//	
+//	
 
 	
 }

@@ -5,11 +5,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.agencialetsgo.models.Cliente;
-import com.agencialetsgo.models.Destino;
 import com.agencialetsgo.models.Pedido;
-import com.agencialetsgo.repositories.ClienteRepositorio;
-import com.agencialetsgo.repositories.DestinoRepositorio;
 import com.agencialetsgo.repositories.PedidoRepositorio;
 import com.agencialetsgo.services.PedidoServico;
 
@@ -18,14 +14,7 @@ public class PedidoServicoImpl implements PedidoServico {
 
 	@Autowired
 	private PedidoRepositorio pr;
-	
-	@Autowired
-	private ClienteRepositorio cr;
-	
-	@Autowired
-	private DestinoRepositorio dr;
-	
-	
+		
 	@Override
 	public List<Pedido> getAllPedidos() {
 		return pr.findAll();
@@ -55,18 +44,6 @@ public class PedidoServicoImpl implements PedidoServico {
 	public void deletePedidoById(Long id) {
 		pr.deleteById(id);
 	}
-
-//	@Override
-//	public void addPedido(Long clienteId, Long destinoId) {
-//		Cliente cliente = cr.findById(clienteId).orElseThrow(()-> new RuntimeException("ID " + clienteId + " Not Found"));
-//		Destino destino = dr.findById(destinoId).orElseThrow(()-> new RuntimeException("ID " + destinoId + " Not Found"));
-//	
-//	if(cliente != null && destino != null) {
-//		cliente.getDestinos().add(destino);
-//		pedido.getDestinos().add(destino);
-//		
-//		cr.save(cliente);
-//		dr.save(destino); }
 		
 
 }

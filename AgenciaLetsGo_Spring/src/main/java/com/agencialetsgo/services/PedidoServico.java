@@ -11,5 +11,5 @@ public interface PedidoServico {
 	Pedido savePedido(Pedido pedido);
 	Pedido updatePedido(Long id, Pedido pedidoUpdated);
 	void deletePedidoById(Long id);
-	
+		
 }
