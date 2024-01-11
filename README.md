@@ -20,7 +20,7 @@
 
 
 <h4 align="center"> 
-	🚀 Fase 5 🚀 
+	🚀 Fase 4 🚀 
 </h4>
 
 <p align="center">
@@ -45,20 +45,17 @@ Projeto desenvolvido durante o curso formação **Programador FullStack - Recode
 
 ## ⚙️ Entregas
 
-Usando tecnologias web DOT NET, vamos desenvolver uma aplicação web API em C# para consumir os dados da agencia de viagens ( Somente consulta a base de dados GET ).
-
 #### ** Banco de Dados ** 
 
-- [ x ] Ajustar a base de dados para relatórios das APIs, caso seja necessário 
-- [ x ] Disponibilizar acesso aos dados consumidos pelas APIs,      
+- [ x ] Criação / Atualização da base de dados usando o padrão NoSql (MongoDB) ou SQL relacional, atendendo as especificações do projeto, usando o framework Spring Data e as Tecnologias da plataforma e linguagem Java, aplicando ORM (Object-Relational Mapping ou em português mapeamento objeto-relacional).    
 
 #### ** Back-End ** 
 
-- [ x ] Desenvolver as APIs para manipulação de dados em C# 
+- [ x ] Refatorar o código anterior usando os padrões de projeto MVC e Persistência de dados com os frameworks Spring para a organização da aplicação.  
 
 #### ** Front-End ** 
 
-- [ x ] Criar uma interface  usando React.Js ou Next.Js  para consultas usando API em C#. 
+- [ x ] As views da aplicação serão baseadas no padrão MVC usando opcionalmente a biblioteca React ou qualquer Java template engine (Thymeleaf).
 
 ---
 
@@ -94,7 +91,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 #### ** BackEnd** 
 
--   **C#**
+-   **Java Spring**
 
 #### ** Dados** 
 
@@ -119,3 +116,5 @@ Este projeto esta sobe a licença [MIT](./LICENSE).
 Feito com ❤️ por Alessandra de Luca Rodrigues 👋🏽 [Entre em contato!](https://www.linkedin.com/in/aledelucarodrigues/)
 
 ---
+
+
